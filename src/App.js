@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { projectFirestore } from "./firebase/config";
+import "./App.css";
+import SuperheroesList from "./components/SuperheroesList";
+import SuperheroForm from "./components/SuperheroForm";
+import { firestoreData } from "./firebase/config";
 
 const App = () => {
   const [data, setData] = useState([]);
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    projectFirestore
+    firestoreData
       .collection("superheroes")
       .get()
       .then((snapshot) => {
@@ -26,16 +29,10 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className="app">
       {error && <p>{error}</p>}
-      {data.map((supHero) => {
-        const { id, name, superpower, age } = supHero;
-        return (
-          <div key={id}>
-            {name}, {superpower}, {age}
-          </div>
-        );
-      })}
+      <SuperheroForm />
+      <SuperheroesList data={data} />
     </div>
   );
 };
