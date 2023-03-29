@@ -7,7 +7,7 @@ const SuperheroesList = (props) => {
       {props.data.map((supHero) => {
         const { id, name, superpower, age } = supHero;
         return (
-          <Superhero key={id} name={name} superpower={superpower} age={age} />
+          <Superhero key={id} id={id} name={name} superpower={superpower} age={age} />
         );
       })}
     </ul>

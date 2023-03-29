@@ -9,23 +9,28 @@ const App = () => {
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    firestoreData
-      .collection("superheroes")
-      .get()
-      .then((snapshot) => {
+    const unsub = firestoreData.collection("superheroes").onSnapshot(
+      (snapshot) => {
         if (snapshot.empty) {
           setError("Database is empty.");
+          setData([]);
         } else {
-          let result = [];
+          let finalData = [];
           snapshot.docs.forEach((supHero) => {
-            result.push({ id: supHero.id, ...supHero.data() });
+            finalData.push({ id: supHero.id, ...supHero.data() });
           });
-          setData(result);
+          setData(finalData);
+          setError(false)
         }
-      })
-      .catch((err) => {
+      },
+      (err) => {
         setError(err.message);
-      });
+      }
+    );
+
+    return () => {
+      unsub();
+    };
   }, []);
 
   return (
