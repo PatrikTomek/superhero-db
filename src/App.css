@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+}
+
+body {
+  background-color: rgb(49, 12, 83);
+}
+
+.app {
+  background-color: rgb(174, 174, 212);
+  height: 90%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 80px;
+  border-radius: 15px;
+}
+
+/* SuperheroForm */
+.superhero-form {
+  border: 1px solid orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  width: 400px;
+  margin-inline: auto;
+  margin-bottom: 100px;
+  font-size: 20px;
+}
+.superhero-form-label {
+  align-self: flex-start;
+}
+.superhero-form-input {
+  height: 40px;
+  width: 400px;
+  margin: 5px 0px 15px 0px;
+}
+.superhero-form-btn {
+  width: 400px;
+  height: 40px;
+}
+
+/* SuperheroesList */
+.superheroes-list {
+  list-style-type: none;
+}
+.superhero {
+  border: 1px solid brown;
+  height: 150px;
+  font-size: 25px;
+  display: flex;
+  gap: 68px;
+}
+.superhero div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+.superhero-label {
+  font-size: 22px;
+  margin-left: 50px;
+}
+.superhero-delete-btn {
+  width: 50px;
+  height: 50px;
+  align-self: center;
+  margin-left: auto;
+  margin-right: 50px;
+}
