@@ -20,7 +20,7 @@ const App = () => {
             finalData.push({ id: supHero.id, ...supHero.data() });
           });
           setData(finalData);
-          setError(false)
+          setError(false);
         }
       },
       (err) => {
@@ -34,10 +34,19 @@ const App = () => {
   }, []);
 
   return (
-    <div className="app">
-      {error && <p>{error}</p>}
-      <SuperheroForm />
-      <SuperheroesList data={data} />
+    <div>
+      <div className="app">
+        {error && <p>{error}</p>}
+        <h1 className="main-header">Superhero database</h1>
+        <SuperheroForm />
+        <SuperheroesList data={data} />
+      </div>
+      <div className="signature">
+        Coded by{" "}
+        <a href="https://patriktomek.cz/" target="_blank" rel="noreferrer">
+          Patrik Tomek
+        </a>
+      </div>
     </div>
   );
 };
