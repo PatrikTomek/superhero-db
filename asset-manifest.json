@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/superhero-db/static/css/main.a48f69c5.css",
+    "main.js": "/superhero-db/static/js/main.6b2e9911.js",
+    "index.html": "/superhero-db/index.html",
+    "main.a48f69c5.css.map": "/superhero-db/static/css/main.a48f69c5.css.map",
+    "main.6b2e9911.js.map": "/superhero-db/static/js/main.6b2e9911.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a48f69c5.css",
+    "static/js/main.6b2e9911.js"
+  ]
+}
