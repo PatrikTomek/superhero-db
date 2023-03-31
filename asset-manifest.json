@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/superhero-db/static/css/main.5c5ccbca.css",
+    "main.css": "/superhero-db/static/css/main.fb2f0724.css",
     "main.js": "/superhero-db/static/js/main.6b2e9911.js",
     "index.html": "/superhero-db/index.html",
-    "main.5c5ccbca.css.map": "/superhero-db/static/css/main.5c5ccbca.css.map",
+    "main.fb2f0724.css.map": "/superhero-db/static/css/main.fb2f0724.css.map",
     "main.6b2e9911.js.map": "/superhero-db/static/js/main.6b2e9911.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c5ccbca.css",
+    "static/css/main.fb2f0724.css",
     "static/js/main.6b2e9911.js"
   ]
 }
