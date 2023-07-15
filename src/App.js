@@ -12,7 +12,7 @@ const App = () => {
     const unsub = firestoreData.collection("superheroes").onSnapshot(
       (snapshot) => {
         if (snapshot.empty) {
-          setError("Database is empty.");
+          setError("");
           setData([]);
         } else {
           let finalData = [];
