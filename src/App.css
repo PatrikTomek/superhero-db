@@ -161,3 +161,55 @@ body {
   font-size: 18px;
   text-decoration: none;
 }
+
+/* MOBILE */
+@media screen and (max-width: 800px) {
+  body {
+    width: 365px;
+  }
+  .app {
+    width: 205px;
+    margin: auto;
+  }
+  .main-header{
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+
+  /* SuperheroForm */
+  .superhero-form {
+    width: 240px;
+    margin-bottom: 80px;
+  }
+  .superhero-form-label {
+    font-size: 18px;
+  }
+  .superhero-form-input,
+  .superhero-form-btn {
+    width: 240px;
+
+  }
+
+  /* SuperheroesList */
+  .superhero {
+    min-width: 0px;
+    width: 320px;
+    gap: 15px;
+    line-height: 20px;
+  }
+  .superhero-label {
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 15px;
+  }
+  .superhero-data {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .superhero-delete-btn {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+}
